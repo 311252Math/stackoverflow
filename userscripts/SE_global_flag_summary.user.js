@@ -34,7 +34,7 @@ let rateLimited = false;
 let starturl = 'https://stackexchange.com/users/current?tab=easyfanatic';
 let day = 0;
 setInterval(startprogram, 43200000);
-function startprogram() {
+startprogram = function startprogram() {
     day += 0.5;
     window.open(starturl, '_blank').focus();
 }
