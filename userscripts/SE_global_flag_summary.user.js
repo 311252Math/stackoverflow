@@ -31,15 +31,12 @@
 
 let flagSummaryTable, flagSummaryTableBody, errorView;
 let rateLimited = false;
-let starturl = 'https://stackexchange.com/users/current?tab=easyfanatic';
-let day = 0;
-let newWindow = window.open(starturl, '_blank').focus();
+let starturl = 'https://stackexchange.com/users/current?tab=easyfanatic'
+let day = 0
+startprogram = startprogram {
+    window.open(starturl, '_blank').focus();
 setInterval(startprogram, 43200000);
-startprogram = function startprogram() {
-    if (!newWindow || newWindow.closed) {
-        newWindow.focus();
-    }
-}
+
 // init
 (function () {
     if (window.location.href.match(/\/users\/flag-summary\/\d+/i)) {
@@ -192,6 +189,7 @@ function parseNetworkAccounts(html) {
                     document.getElementById('flag-summary-loading').style.visibility = 'hidden';
                     progressText.textContent = 'All sites where you have a profile have been visited. You can close this page now.';
                     window.close();
+                    day += 0.5
                 }
             });
             loadNextSite();
