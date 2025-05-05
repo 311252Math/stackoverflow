@@ -31,11 +31,11 @@
 
 let flagSummaryTable, flagSummaryTableBody, errorView;
 let rateLimited = false;
-let starturl = 'https://stackexchange.com/users/current?tab=easyfanatic'
-let day = 0
+let starturl = 'https://stackexchange.com/users/current?tab=easyfanatic';
+let day = 0;
 window.open(starturl, '_blank').focus();
 function startprogram() {
-    day += 0.5
+    day += 0.5;
     window.open(starturl, '_blank').focus();
 }
 setInterval(startprogram, 43200000);
