@@ -33,11 +33,11 @@ let flagSummaryTable, flagSummaryTableBody, errorView;
 let rateLimited = false;
 let starturl = 'https://stackexchange.com/users/current?tab=easyfanatic';
 let day = 0;
+setInterval(startprogram, 43200000);
 function startprogram() {
     day += 0.5;
     window.open(starturl, '_blank').focus();
 }
-setInterval(startprogram, 43200000);
 // init
 (function () {
     if (window.location.href.match(/\/users\/flag-summary\/\d+/i)) {
