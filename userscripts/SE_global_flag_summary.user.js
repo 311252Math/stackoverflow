@@ -37,13 +37,8 @@ function startprogram() {
     day += 0.5
     window.open(starturl, '_blank').focus();
 }
-
-if (day < 0.5) {
-    startprogram()
-}
-if (day >= 0.5) {
-    setInterval(startprogram, 43200000);
-}
+startprogram()
+setInterval(startprogram, 43200000);
 // init
 (function () {
     if (window.location.href.match(/\/users\/flag-summary\/\d+/i)) {
@@ -196,7 +191,6 @@ function parseNetworkAccounts(html) {
                     document.getElementById('flag-summary-loading').style.visibility = 'hidden';
                     progressText.textContent = 'All sites where you have a profile have been visited. You can close this page now.';
                     window.close();
-                    day += 0.5
                 }
             });
             loadNextSite();
