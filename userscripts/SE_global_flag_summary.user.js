@@ -33,12 +33,15 @@ let flagSummaryTable, flagSummaryTableBody, errorView;
 let rateLimited = false;
 let starturl = 'https://stackexchange.com/users/current?tab=easyfanatic'
 let day = 0
-
-if (day < 1) {
-    startprogram()
-    day = 1
+function startprogram() {
+    day += 0.5
+    window.open(starturl, '_blank').focus();
 }
-if (day >= 1) {
+
+if (day < 0.5) {
+    startprogram()
+}
+if (day >= 0.5) {
     setInterval(startprogram, 43200000);
 }
 // init
