@@ -34,13 +34,9 @@ let rateLimited = false;
 let starturl = 'https://stackexchange.com/users/current?tab=easyfanatic'
 let day = 0
 
-function startprogram() {
-    window.open(starturl, '_blank').focus();
-}
-
 if (day < 1) {
     startprogram()
-    day += 0.5
+    day = 1
 }
 if (day >= 1) {
     setInterval(startprogram, 43200000);
