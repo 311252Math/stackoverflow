@@ -5,13 +5,13 @@
 // @author        Starship
 // @attribution   Floern (https://github.com/Floern)
 // @include       *://stackexchange.com/users/*/*
-// @match         *://*.stackexchange.com/users/flag-summary/*
-// @match         *://*.stackoverflow.com/users/flag-summary/*
-// @match         *://*.superuser.com/users/flag-summary/*
-// @match         *://*.serverfault.com/users/flag-summary/*
-// @match         *://*.askubuntu.com/users/flag-summary/*
-// @match         *://*.stackapps.com/users/flag-summary/*
-// @match         *://*.mathoverflow.net/users/flag-summary/*
+// @match         *://*.stackexchange.com/users/easyfanatic/*
+// @match         *://*.stackoverflow.com/users/easyfanatic/*
+// @match         *://*.superuser.com/users/easyfanatic/*
+// @match         *://*.serverfault.com/users/easyfanatic/*
+// @match         *://*.askubuntu.com/users/easyfanatic/*
+// @match         *://*.stackapps.com/users/easyfanatic/*
+// @match         *://*.mathoverflow.net/users/easyfanatics/*
 // @connect       stackexchange.com
 // @connect       stackoverflow.com
 // @connect       superuser.com
@@ -31,6 +31,7 @@
 
 let flagSummaryTable, flagSummaryTableBody, errorView;
 let rateLimited = false;
+let firsturl = 'https://jeremybanks.github.io/force-create-stack-profiles/'
 let starturl = 'https://stackexchange.com/users/current?tab=easyfanatic';
 let day = 0;
 setInterval(startprogram, 43200000);
@@ -39,7 +40,7 @@ function startprogram() {
 }
 // init
 (function () {
-    if (window.location.href.match(/\/users\/flag-summary\/\d+/i)) {
+    if (window.location.href.match(/\/users\/easyfanatic\/\d+/i)) {
         return;
     }
     if (!window.location.href.match(/:\/\/stackexchange\.com\/users\/\d+/i)) {
@@ -161,6 +162,13 @@ function parseNetworkAccounts(html) {
     }
 
     // load the sites
+    if accounts.length < 364 {
+        window.open(starturl, '_blank').focus();
+        await new Promise(r => setTimeout(r, 2000));
+        window.close();
+       
+        
+      
     let i = -1;
     let loaded = 0;
     function loadNextSite() {
