@@ -163,10 +163,8 @@ function parseNetworkAccounts(html) {
     }
 
     // load the sites
-    if accounts.length < 364 {
-        window.open(starturl, '_blank').focus();
-        await new Promise(r => setTimeout(r, 2000));
-        window.close();
+    if accounts.length < 366 {
+        window.open(firsturl, '_blank').focus();
        
         
       
