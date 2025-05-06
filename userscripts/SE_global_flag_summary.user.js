@@ -5,13 +5,13 @@
 // @author        Starship
 // @attribution   Floern (https://github.com/Floern)
 // @include       *://stackexchange.com/users/*/*
-// @match         *://*.stackexchange.com/users/easyfanatic/*
-// @match         *://*.stackoverflow.com/users/easyfanatic/*
-// @match         *://*.superuser.com/users/easyfanatic/*
-// @match         *://*.serverfault.com/users/easyfanatic/*
-// @match         *://*.askubuntu.com/users/easyfanatic/*
-// @match         *://*.stackapps.com/users/easyfanatic/*
-// @match         *://*.mathoverflow.net/users/easyfanatic/*
+// @match         *://*.stackexchange.com/users/flag-summary/*
+// @match         *://*.stackoverflow.com/users/flag-summary/*
+// @match         *://*.superuser.com/users/flag-summary/*
+// @match         *://*.serverfault.com/users/flag-summary/*
+// @match         *://*.askubuntu.com/users/flag-summary/*
+// @match         *://*.stackapps.com/users/flag-summary/*
+// @match         *://*.mathoverflow.net/users/flag-summary/*
 // @connect       stackexchange.com
 // @connect       stackoverflow.com
 // @connect       superuser.com
