@@ -11,7 +11,7 @@
 // @match         *://*.serverfault.com/users/easyfanatic/*
 // @match         *://*.askubuntu.com/users/easyfanatic/*
 // @match         *://*.stackapps.com/users/easyfanatic/*
-// @match         *://*.mathoverflow.net/users/easyfanatics/*
+// @match         *://*.mathoverflow.net/users/easyfanatic/*
 // @connect       stackexchange.com
 // @connect       stackoverflow.com
 // @connect       superuser.com
