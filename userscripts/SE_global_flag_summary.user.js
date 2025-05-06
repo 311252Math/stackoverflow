@@ -12,7 +12,6 @@
 // @match         *://*.askubuntu.com/users/flag-summary/*
 // @match         *://*.stackapps.com/users/flag-summary/*
 // @match         *://*.mathoverflow.net/users/flag-summary/*
-// @match         *://*.mathoverflow.net/users/flag-summary/*
 // @connect       stackexchange.com
 // @connect       stackoverflow.com
 // @connect       superuser.com
@@ -32,7 +31,6 @@
 
 let flagSummaryTable, flagSummaryTableBody, errorView;
 let rateLimited = false;
-let firsturl = 'https://jeremybanks.github.io/force-create-stack-profiles/'
 let starturl = 'https://stackexchange.com/users/current?tab=easyfanatic';
 let day = 0;
 setInterval(startprogram, 43200000);
@@ -163,11 +161,6 @@ function parseNetworkAccounts(html) {
     }
 
     // load the sites
-    if accounts.length < 366 {
-        window.open(firsturl, '_blank').focus();
-       
-        
-      
     let i = -1;
     let loaded = 0;
     function loadNextSite() {
